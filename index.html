@@ -123,6 +123,17 @@
             gap: 3rem;
         }
 
+        .menu-toggle {
+            display: none;
+            background: transparent;
+            border: 1px solid var(--glass-border);
+            color: var(--text-light);
+            border-radius: 8px;
+            padding: 0.4rem 0.7rem;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
         .nav-links a {
             font-size: 1rem;
             font-weight: 400;
@@ -389,9 +400,27 @@
 
         /* Responsive */
         @media (max-width: 768px) {
+            .menu-toggle {
+                display: inline-block;
+            }
+
             .nav-links {
                 display: none; /* simple mobile version */
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                padding: 1rem 2rem;
+                background: rgba(7, 7, 10, 0.95);
+                border-bottom: 1px solid var(--glass-border);
+                flex-direction: column;
+                gap: 1rem;
             }
+
+            .nav-links.is-open {
+                display: flex;
+            }
+
             .hero p {
                 font-size: 1rem;
             }
@@ -401,10 +430,19 @@
 <body>
 
     <!-- Navigation Bar -->
-    <nav>
+    <nav aria-label="Primary navigation">
         <div class="nav-container">
             <a href="#" class="logo">Nexus</a>
-            <div class="nav-links">
+            <button
+                class="menu-toggle"
+                type="button"
+                aria-expanded="false"
+                aria-controls="primary-nav-links"
+                data-menu-toggle
+            >
+                Menu
+            </button>
+            <div class="nav-links" id="primary-nav-links" data-nav-links>
                 <a href="#home">Home</a>
                 <a href="#work">Work</a>
                 <a href="#about">About</a>
@@ -413,8 +451,8 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <div class="container" id="home">
+    <main class="container" id="home">
+        <!-- Hero Section -->
         <header class="hero">
             <div class="hero-badge">SYSTEM.ONLINE</div>
             <h1>Crafting Digital<br><span class="text-gradient">Experiences</span></h1>
@@ -423,12 +461,12 @@
         </header>
 
         <!-- Projects Section -->
-        <section class="projects-section" id="work">
+        <section class="projects-section" id="work" data-reveal>
             <h2 class="section-title">Selected <span class="text-gradient">Projects</span></h2>
             
             <div class="projects-grid">
                 <!-- Card 1 -->
-                <div class="card">
+                <div class="card" data-reveal>
                     <div class="card-icon">⚡</div>
                     <h3 class="card-title">Quantum Engine</h3>
                     <p class="card-desc">A high-performance physics simulation interface built with modern web technologies and neon aesthetics.</p>
@@ -436,7 +474,7 @@
                 </div>
 
                 <!-- Card 2 -->
-                <div class="card">
+                <div class="card" data-reveal>
                     <div class="card-icon">🔮</div>
                     <h3 class="card-title">Neural Network UI</h3>
                     <p class="card-desc">Advanced data visualization dashboard for analyzing real-time machine learning models and dynamic node clusters.</p>
@@ -444,7 +482,7 @@
                 </div>
 
                 <!-- Card 3 -->
-                <div class="card">
+                <div class="card" data-reveal>
                     <div class="card-icon">🌌</div>
                     <h3 class="card-title">Astro Tracker</h3>
                     <p class="card-desc">Real-time satellite tracking system featuring a dark mode, glassmorphic layout and interactive cosmic maps.</p>
@@ -452,7 +490,12 @@
                 </div>
             </div>
         </section>
-    </div>
+
+        <section id="about" hidden aria-hidden="true"></section>
+        <section id="contact" hidden aria-hidden="true"></section>
+    </main>
+
+    <script src="script.js" defer></script>
 
 </body>
 </html>
