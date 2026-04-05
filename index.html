@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Futuristic Portfolio</title>
+    <title>Sushanth | Personal Blog</title>
     <!-- Modern futuristic font: Outfit -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -263,6 +263,49 @@
             align-items: center;
         }
 
+        .info-section {
+            width: 100%;
+            padding: 3rem 0;
+        }
+
+        .info-wrap {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            padding: 2rem;
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+
+        .info-wrap p {
+            margin-top: 1rem;
+            line-height: 1.7;
+            color: var(--text-muted);
+        }
+
+        .contact-links {
+            margin-top: 1.5rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .contact-links a {
+            border: 1px solid var(--glass-border);
+            border-radius: 999px;
+            padding: 0.5rem 1rem;
+            color: var(--text-light);
+            transition: all 0.3s ease;
+        }
+
+        .contact-links a:hover {
+            color: var(--neon-blue);
+            border-color: rgba(0, 240, 255, 0.45);
+        }
+
         .section-title {
             text-align: center;
             font-size: 2.5rem;
@@ -424,6 +467,10 @@
             .hero p {
                 font-size: 1rem;
             }
+
+            .info-wrap {
+                padding: 1.3rem;
+            }
         }
     </style>
 </head>
@@ -432,7 +479,7 @@
     <!-- Navigation Bar -->
     <nav aria-label="Primary navigation">
         <div class="nav-container">
-            <a href="#" class="logo">Nexus</a>
+            <a href="#" class="logo">Sushanth</a>
             <button
                 class="menu-toggle"
                 type="button"
@@ -444,7 +491,7 @@
             </button>
             <div class="nav-links" id="primary-nav-links" data-nav-links>
                 <a href="#home">Home</a>
-                <a href="#work">Work</a>
+                <a href="#posts">Projects</a>
                 <a href="#about">About</a>
                 <a href="#contact">Contact</a>
             </div>
@@ -454,45 +501,86 @@
     <main class="container" id="home">
         <!-- Hero Section -->
         <header class="hero">
-            <div class="hero-badge">SYSTEM.ONLINE</div>
-            <h1>Crafting Digital<br><span class="text-gradient">Experiences</span></h1>
-            <p>I build interactive, glassmorphic, and high-performance interfaces that bridge the gap between design and cutting-edge technology.</p>
-            <a href="#work" class="btn">Explore Work</a>
+            <div class="hero-badge">PERSONAL.BLOG</div>
+            <h1>Thoughts on Code,<br><span class="text-gradient">Learning, and Building</span></h1>
+            <p>I write about web development, practical project lessons, and the systems I use to learn, build, and improve consistently.</p>
+            <a href="#posts" class="btn">Explore Posts</a>
         </header>
 
         <!-- Projects Section -->
-        <section class="projects-section" id="work" data-reveal>
-            <h2 class="section-title">Selected <span class="text-gradient">Projects</span></h2>
+        <section class="projects-section" id="posts" data-reveal>
+            <h2 class="section-title">Featured <span class="text-gradient">Projects</span></h2>
             
             <div class="projects-grid">
                 <!-- Card 1 -->
                 <div class="card" data-reveal>
                     <div class="card-icon">⚡</div>
-                    <h3 class="card-title">Quantum Engine</h3>
-                    <p class="card-desc">A high-performance physics simulation interface built with modern web technologies and neon aesthetics.</p>
-                    <a href="#" class="card-link">View Project <span>→</span></a>
+                    <h3 class="card-title">Virtual Lab Simulator</h3>
+                    <p class="card-desc">Interactive web-based platform designed to help students perform common undergraduate physics experiments in a virtual environment.</p>
+                    <a href="virtual-lab.html" class="card-link">View Project <span>→</span></a>
                 </div>
 
-                <!-- Card 2 -->
+                <!-- Card 2
                 <div class="card" data-reveal>
                     <div class="card-icon">🔮</div>
-                    <h3 class="card-title">Neural Network UI</h3>
-                    <p class="card-desc">Advanced data visualization dashboard for analyzing real-time machine learning models and dynamic node clusters.</p>
+                    <h3 class="card-title">Student Digital Twin System</h3>
+                    <p class="card-desc">A simulation system that models student habits and predicts long-term outcomes using time-lag and accumulation logic.</p>
                     <a href="#" class="card-link">View Project <span>→</span></a>
-                </div>
+                </div> -->
 
                 <!-- Card 3 -->
-                <div class="card" data-reveal>
+                <!-- <div class="card" data-reveal>
                     <div class="card-icon">🌌</div>
-                    <h3 class="card-title">Astro Tracker</h3>
-                    <p class="card-desc">Real-time satellite tracking system featuring a dark mode, glassmorphic layout and interactive cosmic maps.</p>
+                    <h3 class="card-title">OS Scheduling Visualizer</h3>
+                    <p class="card-desc">Interactive visualization of CPU scheduling algorithms like FCFS, SJF, Round Robin and Priority with animated Gantt charts.</p>
                     <a href="#" class="card-link">View Project <span>→</span></a>
-                </div>
+                </div> -->
+
+                <!-- Card 4 -->
+                <!-- <div class="card" data-reveal>
+                    <div class="card-icon">💬</div>
+                    <h3 class="card-title">Terminal Chat Application</h3>
+                    <p class="card-desc">Real-time terminal-based chat system using socket programming for client-server communication.</p>
+                    <a href="#" class="card-link">View Project <span>→</span></a>
+                </div> -->
+
+                <!-- Card 5 -->
+                <!-- <div class="card" data-reveal>
+                    <div class="card-icon">🐍</div>
+                    <h3 class="card-title">Snake Species Identifier (Coming Soon)</h3>
+                    <p class="card-desc">AI-powered image classification system to identify snake species using computer vision.</p>
+                    <a href="#" class="card-link">View Project <span>→</span></a>
+                </div> -->
             </div>
         </section>
 
-        <section id="about" hidden aria-hidden="true"></section>
-        <section id="contact" hidden aria-hidden="true"></section>
+        <section class="info-section" id="about" data-reveal>
+            <div class="info-wrap">
+                <h2 class="section-title">About</h2>
+                <p>
+                    I’m Sushanth, a developer focused on building interactive simulations and tools that make complex concepts easier to understand.
+
+                    I work on projects that simplify how people learn and interact with technical concepts, especially in areas where theory often feels abstract or difficult to visualize.
+
+                    Currently, I’m building tools that model real-world behaviors, simulate long-term outcomes of everyday actions, and create interactive visualizations that make system-level concepts more intuitive.
+
+                    I enjoy turning ideas into practical tools and continuously experimenting with new concepts to improve both my skills and the way people learn through technology.
+
+                </p>
+            </div>
+        </section>
+
+        <section class="info-section" id="contact" data-reveal>
+            <div class="info-wrap">
+                <h2 class="section-title">Contact</h2>
+                <p>Reach out for collaboration, feedback, or a quick conversation about web development.</p>
+                <div class="contact-links">
+                    <a href="https://github.com/sushxnth17" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a href="https://www.linkedin.com/in/sushanth17/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    <a href="mailto:sushanth0951s@gmail.com">Email</a>
+                </div>
+            </div>
+        </section>
     </main>
 
     <script src="script.js" defer></script>

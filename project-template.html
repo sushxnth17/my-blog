@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECT TITLE HERE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="project-page.css">
+</head>
+<body>
+    <nav aria-label="Primary navigation">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Sushanth</a>
+            <button
+                class="menu-toggle"
+                type="button"
+                aria-expanded="false"
+                aria-controls="primary-nav-links"
+                data-menu-toggle
+            >
+                Menu
+            </button>
+            <div class="nav-links" id="primary-nav-links" data-nav-links>
+                <a href="index.html#home">Home</a>
+                <a href="index.html#posts">Projects</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container post-page" id="top">
+        <article>
+            <header data-reveal>
+                <div class="hero-badge">Project Story</div>
+                <h1 class="post-title">PROJECT NAME <span class="text-gradient">HIGHLIGHT</span></h1>
+                <p class="post-intro">
+                    Short introduction for this project page.
+                </p>
+                <a href="index.html#posts" class="btn">Back to Projects</a>
+            </header>
+
+            <section class="info-section" data-reveal>
+                <div class="info-wrap">
+                    <h2>Introduction</h2>
+                    <p>Write the introduction here.</p>
+                </div>
+            </section>
+
+            <section class="info-section" data-reveal>
+                <div class="info-wrap">
+                    <h2>Why I Built This Project</h2>
+                    <p>Write your motivation here.</p>
+                </div>
+            </section>
+
+            <section class="info-section" data-reveal>
+                <div class="info-wrap">
+                    <h2>How It Works</h2>
+                    <p>Write a simple explanation of how it works.</p>
+                </div>
+            </section>
+
+            <section class="info-section" data-reveal>
+                <div class="info-wrap">
+                    <h2>Challenges Faced</h2>
+                    <p>Write the key challenges here.</p>
+                </div>
+            </section>
+
+            <section class="info-section" data-reveal>
+                <div class="info-wrap">
+                    <h2>What I Learned</h2>
+                    <p>Write your learnings here.</p>
+                </div>
+            </section>
+        </article>
+
+        <p class="footer-note">Built and documented by Sushanth.</p>
+    </main>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
