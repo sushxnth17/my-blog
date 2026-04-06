@@ -321,6 +321,12 @@
             max-width: 1100px;
         }
 
+        .card-link-wrap {
+            display: block;
+            width: 100%;
+            color: inherit;
+        }
+
         /* Project Cards wrapper */
         .card {
             background: var(--glass-bg);
@@ -355,7 +361,7 @@
         }
 
         .card:hover {
-            transform: translateY(-12px);
+            transform: translateY(-6px) scale(1.02);
             border-color: rgba(255, 255, 255, 0.15);
             background: rgba(255, 255, 255, 0.05);
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5),
@@ -441,6 +447,10 @@
             transform: translateX(5px);
         }
 
+        .info-section {
+            margin-bottom: 1rem;
+        }
+
         /* Responsive */
         @media (max-width: 768px) {
             .menu-toggle {
@@ -502,8 +512,8 @@
         <!-- Hero Section -->
         <header class="hero">
             <div class="hero-badge">PERSONAL.BLOG</div>
-            <h1>Thoughts on Code,<br><span class="text-gradient">Learning, and Building</span></h1>
-            <p>I write about web development, practical project lessons, and the systems I use to learn, build, and improve consistently.</p>
+            <h1>Thoughts on code,<br><span class="text-gradient">Learning, and Building</span></h1>
+            <p>Welcome to my personal blog where I share insights and experiences about coding, learning, and building cool stuff!</p>
             <a href="#posts" class="btn">Explore Posts</a>
         </header>
 
@@ -513,12 +523,14 @@
             
             <div class="projects-grid">
                 <!-- Card 1 -->
-                <div class="card" data-reveal>
-                    <div class="card-icon">⚡</div>
-                    <h3 class="card-title">Virtual Lab Simulator</h3>
-                    <p class="card-desc">Interactive web-based platform designed to help students perform common undergraduate physics experiments in a virtual environment.</p>
-                    <a href="virtual-lab.html" class="card-link">View Project <span>→</span></a>
-                </div>
+                <a href="virtual-lab.html" class="card-link-wrap" aria-label="Open Virtual Lab Simulator project">
+                    <article class="card" data-reveal>
+                        <div class="card-icon">⚡</div>
+                        <h3 class="card-title">Virtual Lab Simulator</h3>
+                        <p class="card-desc">Interactive web-based platform designed to help students perform common undergraduate physics experiments in a virtual environment.</p>
+                        <p class="card-link">View Project <span>→</span></p>
+                    </article>
+                </a>
 
                 <!-- Card 2
                 <div class="card" data-reveal>
