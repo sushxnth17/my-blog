@@ -322,7 +322,7 @@
         }
 
         .card-link-wrap {
-            display: block;
+            display: flex;
             width: 100%;
             color: inherit;
         }
@@ -340,6 +340,8 @@
             overflow: hidden;
             display: flex;
             flex-direction: column;
+            width: 100%;
+            min-height: 360px;
         }
 
         /* Glossy shine effect */
@@ -481,6 +483,10 @@
             .info-wrap {
                 padding: 1.3rem;
             }
+
+            .card {
+                min-height: 320px;
+            }
         }
     </style>
 </head>
@@ -538,6 +544,16 @@
                         <div class="card-icon">⏱</div>
                         <h3 class="card-title">ReadyQueue</h3>
                         <p class="card-desc">A website where CPU scheduling algorithms can be understood and visualized.</p>
+                        <p class="card-link">View Project <span>→</span></p>
+                    </article>
+                </a>
+
+                <!-- Card 3 -->
+                <a href="student-digital-twin.html" class="card-link-wrap" aria-label="Open Student Digital Twin System project">
+                    <article class="card" data-reveal>
+                        <div class="card-icon">🧠</div>
+                        <h3 class="card-title">Student Digital Twin System</h3>
+                        <p class="card-desc">A simulation-based academic and career analytics system that models how daily student habits influence long-term academic performance and placement readiness.</p>
                         <p class="card-link">View Project <span>→</span></p>
                     </article>
                 </a>
