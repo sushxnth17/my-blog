@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ReadyQueue | Project Story</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="project-page.css">
+</head>
+<body>
+	<nav aria-label="Primary navigation">
+		<div class="nav-container">
+			<a href="index.html" class="logo">Sushanth</a>
+			<button
+				class="menu-toggle"
+				type="button"
+				aria-expanded="false"
+				aria-controls="primary-nav-links"
+				data-menu-toggle
+			>
+				Menu
+			</button>
+			<div class="nav-links" id="primary-nav-links" data-nav-links>
+				<a href="index.html#home">Home</a>
+				<a href="index.html#posts">Projects</a>
+				<a href="index.html#about">About</a>
+				<a href="index.html#contact">Contact</a>
+			</div>
+		</div>
+	</nav>
+
+	<main class="container post-page" id="top">
+		<article>
+			<header data-reveal>
+				<div class="hero-badge">Project Story</div>
+				<h1 class="post-title">ReadyQueue <span class="text-gradient">CPU Scheduling Visualizer</span></h1>
+				<p class="post-meta">
+					<time datetime="2026-04-11">April 11, 2026</time>
+					<span aria-hidden="true">•</span>
+					<span>4 min read</span>
+				</p>
+				<div class="project-links" aria-label="Project links">
+					<a href="https://github.com/sushxnth17/readyQueue" target="_blank" rel="noopener noreferrer">View Code on GitHub &rarr;</a>
+				</div>
+				<p class="post-intro">
+					ReadyQueue is a web project for understanding CPU scheduling algorithms through clear, interactive visualizations.
+					It is designed to make the scheduling process easier to follow by showing how processes move through the ready queue and get selected for execution.
+				</p>
+				<a href="index.html#posts" class="btn">Back to Projects</a>
+			</header>
+
+			<section class="info-section" data-reveal>
+				<div class="info-wrap">
+					<h2>Tech Stack</h2>
+					<ul class="tech-stack-list">
+						<li>HTML</li>
+						<li>CSS</li>
+						<li>JavaScript</li>
+						<li>Visualization UI Components</li>
+						<li>Git & GitHub</li>
+					</ul>
+				</div>
+			</section>
+
+			<section class="info-section" data-reveal>
+				<div class="info-wrap">
+					<h2>Introduction</h2>
+					<p>
+						ReadyQueue is built to help users understand how CPU scheduling works in a visual and approachable way.
+						Instead of treating scheduling as only theory, the project presents the flow of processes and the effect of algorithm choices more clearly.
+					</p>
+				</div>
+			</section>
+
+			<section class="info-section" data-reveal>
+				<div class="info-wrap">
+					<h2>Why I Built This Project</h2>
+					<p>
+						CPU scheduling is one of those topics that is easier to grasp when it is shown visually.
+						I built ReadyQueue to make the concept less abstract and to give users a simple way to explore scheduling behavior step by step.
+					</p>
+				</div>
+			</section>
+
+			<section class="info-section" data-reveal>
+				<div class="info-wrap">
+					<h2>How It Works (Simple Explanation)</h2>
+					<p>
+						The project takes scheduling inputs, processes them according to the selected algorithm, and then displays the result in a visual format.
+						This makes it easier to compare different algorithms and understand how each one changes the execution order.
+					</p>
+					<p>
+						In short: choose a scheduling method, enter process details, and watch the ready queue behavior unfold.
+					</p>
+				</div>
+			</section>
+
+			<section class="info-section" data-reveal>
+				<div class="info-wrap">
+					<h2>Challenges Faced</h2>
+					<p>
+						One challenge was presenting scheduling behavior in a way that feels simple without losing the technical meaning.
+						Another challenge was making the visualization intuitive enough for users to understand the algorithm flow at a glance.
+						I also focused on keeping the interface clear so the learning experience stays centered on the scheduling logic.
+					</p>
+				</div>
+			</section>
+
+			<section class="info-section" data-reveal>
+				<div class="info-wrap">
+					<h2>What I Learned</h2>
+					<p>
+						This project improved my understanding of CPU scheduling concepts and how to present technical ideas visually.
+						It also reinforced the value of building interfaces that help users learn through interaction instead of only reading theory.
+					</p>
+				</div>
+			</section>
+
+			<section class="info-section" data-reveal>
+				<div class="info-wrap">
+					<h2>Latest Update</h2>
+					<p>
+						I am continuing to improve ReadyQueue by refining the scheduling flow, visuals, and overall learning experience over time.
+					</p>
+				</div>
+			</section>
+		</article>
+
+		<p class="footer-note">Built and documented by Sushanth.</p>
+	</main>
+
+	<script src="script.js" defer></script>
+</body>
+</html>
