@@ -1,7 +1,7 @@
 ### Personal Blog Website
 A modern and responsive personal blog website built to share thoughts, projects, experiences, and ideas in a clean and engaging way.
 
-## 🌐 Overview
+##  Overview
 - This project is a personal blogging platform where users can:
     Read blog posts
     Explore different topics and categories
@@ -13,7 +13,7 @@ A modern and responsive personal blog website built to share thoughts, projects,
   ---
 
   
-## ✨ Features
+##  Features
 - Responsive design for mobile, tablet, and desktop
 - Clean and modern UI
 - Blog listing page
@@ -26,7 +26,7 @@ A modern and responsive personal blog website built to share thoughts, projects,
 ---
 
 
-## 🛠️ Tech Stack
+##  Tech Stack
 - HTML
 - CSS
 - JavaScript
